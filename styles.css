@@ -6,7 +6,7 @@ body, html {
 }
 
 .landing {
-    background-image: url('images/bg.png');
+    background-image: url('images/cg.png');
     height: 100%;
     display: flex;
     flex-direction: column;
