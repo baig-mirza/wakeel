@@ -4,7 +4,6 @@ body, html {
     height: 100%;
     overflow: hidden;
 }
-
 .landing {
     background-image: url('images/cg.png');
     height: 100%;
@@ -56,6 +55,10 @@ body, html {
     transform: translateY(100%); /* Start with full vertical translation */
 }
 
+.nv-bt 
+{
+    margin-top: 20px;
+}
 /* real website content styling starts here */
 .navbar-brand 
 {
@@ -74,39 +77,23 @@ body, html {
     border: 1px solid white;
     padding: 10px 38px;
     color: white;
-    text-decoration: none;
 }
-/* .shop-btn a 
-{
-    color: white;
-    font-size: 15px;
-    text-decoration: none;
-} */
 .contact-btn
 {
     background-color: white;
     border: 1px solid black;
     padding: 9px 30px;
     margin-left: 10px;
-    margin-top: 2px;
+}
+.contact-btn a 
+{
     text-decoration: none;
+    font-size: 15px;
     color: black;
-}
-.contact-btn:hover 
-{
-    background-color: black;
-    color: white;
-    border-color: white;
-}
-.shop-btn:hover 
-{
-    color: black;
-    background-color: white;
-    border-color: black
 }
 .background
 {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
     height: 100%;
     background-image: url('images/Screenshot\ 2023-10-03\ 195418.png');
@@ -114,3 +101,122 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.pp 
+{
+    padding: 15px 80px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 500px;
+    margin-left: 80px;
+    font-size: 20px;
+}
+.pp a 
+{
+    text-decoration: none;
+    color: black;
+}
+/* Add custom CSS styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.popup-content ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.popup-content ul li {
+    margin-bottom: 10px;
+}
+.popup-content ul li a 
+{
+    color: white;
+    text-decoration: none;
+}
+.modal-logo 
+{
+    width: 150px;
+}
+.instagram-logo
+{
+    margin-right: 20px;
+}
+.instagram-logo a 
+{
+    color: black;
+}
+.cart-logo 
+{
+    width: 100px;
+    margin-left: 25px;
+}
+.black-background-modal 
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.modal-dialog
+{
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.cart-close-btn 
+{
+    padding-bottom: 20px;
+}
+/* mobile responsive styles */
+@media (min-width: 300px) and (max-width: 700px)
+{
+    .white-logo
+    {
+        width: 70px;
+    }
+    .mobile-menu 
+    {
+        margin-top: 5px;
+    }
+    .background 
+    {
+        margin-top: 20px;
+    }
+    .navbar-brand 
+    {
+        left: 0%;
+        position: static;
+        transform: translateX(-0%);
+    }
+    .contact-btn
+    {
+        margin-left: 0px;
+    }
+    .pp 
+    {
+    padding: 10px 40px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 280px;
+    margin-left: 10px;
+    font-size: 15px;
+    }
+    .pp a 
+    {
+    text-decoration: none;
+    color: black;
+    }
+
+}
+
