@@ -16,3 +16,21 @@ document.querySelector('.scroll-down-arrow').addEventListener('click', function 
         content.style.transform = 'translateY(0%)';
     }, 800); // Adjust the delay time (in milliseconds)
 });
+// Add this script at the bottom of your HTML, after including jQuery and Bootstrap scripts.
+$(document).ready(function () {
+    $("#popup-button").click(function () {
+        $("#popup").fadeIn();
+    });
+
+    $("#close-popup").click(function () {
+        $("#popup").fadeOut();
+    });
+});
+
+var menu = document.querySelector(".mobile-menu")
+
+if (navigator.userAgent.match(/Mobile/)) {
+
+    menu.classList.add("ms-auto");
+
+};
