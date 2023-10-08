@@ -20,13 +20,23 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
               <a class="navbar-brand mobile-logo" href="index.html"><img class="white-logo" src="images/white logo.png" alt=""></a>
-              <button class="navbar-toggler mobile-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                width="30" height="30"
-                viewBox="0,0,256,256"
-                style="fill:#fff;">
-                <g fill="#000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,-1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,-1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"></path></g></g>
-                </svg>
+              <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" 
+              aria-expanded="false" 
+              aria-label="Toggle Navbar"
+              >
+
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+              width="30" height="30"
+              viewBox="0,0,256,256"
+              style="fill:#000;">
+              <g fill="#000" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M3,7c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,14c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587zM3,21c-0.36064,-0.0051 -0.69608,0.18438 -0.87789,0.49587c-0.18181,0.3115 -0.18181,0.69676 0,1.00825c0.18181,0.3115 0.51725,0.50097 0.87789,0.49587h24c0.36064,0.0051 0.69608,-0.18438 0.87789,-0.49587c0.18181,-0.3115 0.18181,-0.69676 0,-1.00825c-0.18181,-0.3115 -0.51725,-0.50097 -0.87789,-0.49587z"></path></g></g>
+              </svg>
+               
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
@@ -97,11 +107,63 @@
 </div>
 
 
-    <section class="background">
-      <div class="shop-button-container">
-        <button class="pp"><a href="#">Shop now</a></button>
-      </div>
+  <div class="banner-image">
+    <div class="shop-button-container">
+      <button class="pp"><a href="#">Shop now</a></button>
+    </div>
+  </div>
+      
+
+    <section class="collection">
+      <div class="container">
+        <h2 class="collection-heading">NEW DROP!</h2>
+        <p class="collection-text">Your number one destination to find trendy and stylish clothing that has a unique traditional touch to it. </p>
+        <!-- Use Bootstrap row and columns -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="image-container">
+                    <img class="collection-image" src="images/collection1 (2).JPG" alt="Image 1">
+                    <div class="overlay">
+                     <div class="overlay-text">QALB</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image-container">
+                  <img class="collection-image" src="images/collection3.JPG" alt="Image 2">
+                  <div class="overlay">
+                        <div class="overlay-text">LANA</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="image-container">
+                  <img class="collection-image" src="images/collection2.png" alt="Image 3"></a>
+                  <div class="overlay">
+                        <div class="overlay-text">ARABIAN NIGHTS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <button id="collection-button" class="collection-btn">Shop</button>
     </section>
+
+    <div class="popup-container" id="popup">
+      <div class="popup-content">
+        <img class="modal-logo" src="images/pon.png" alt="">
+          <ul>
+              <li><a href="#">Qalb</a></li>
+              <li><a href="#">Lana</a></li>
+              <li><a href="#">Arabian nights</a></li>
+          </ul>
+          <button id="close-popup" class="btn btn-secondary">Close</button>
+      </div>
+  </div>
+    
 
 
     <!-- ... (your script tags and external scripts) ... -->
