@@ -1,8 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 100%;
     overflow: hidden;
+    height: 100%;
 }
 .landing {
     background-image: url('images/cg.png');
@@ -91,15 +91,15 @@ body, html {
     font-size: 15px;
     color: black;
 }
-.background
+/* the background section styling starts here */
+.banner-image
 {
     margin-top: 30px;
-    width: 100%;
-    height: 100%;
     background-image: url('images/Screenshot\ 2023-10-03\ 195418.png');
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
 }
 .pp 
 {
@@ -123,9 +123,10 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: black;
-    padding: 20px;
+    padding: 20px 80px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     z-index: 2;
+    border: 5px solid white;
 }
 
 .popup-content {
@@ -178,26 +179,126 @@ body, html {
 {
     padding-bottom: 20px;
 }
+#checkout-btn 
+{
+    padding: 7px 25px;
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+/* the collection section styling starts here */
+.collection
+{
+    margin-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.collection-heading 
+{
+    font-size: 60px;
+    font-weight: bolder;
+}
+.collection-text 
+{
+    margin-top: 20px;
+    font-size: 20px;
+}
+/* Style the image containers */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+/* Style the images to fill the container */
+.collection-image {
+    width: 437px;
+    height: 418px;
+}
+
+/* Style the overlay effect */
+.overlay {
+   /* position: absolute;
+    top: 0;
+    left: 0;
+    width: 437px;
+    height: 418px;
+    background-color: white; /* Initial background color, hidden
+    opacity: 0; /* Initially hidden */
+   /* display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease; /* Add a smooth transition effect*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the overlay text */
+.overlay-text {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Hover effect to show the overlay */
+.image-container:hover .overlay {
+    opacity: 0.5; /* Show the overlay on hover */
+}
+.collection-btn 
+{
+    background-color: black;
+    color: white;
+    padding: 20px 100px;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid white;
+}
+
+.collection-btn:hover 
+{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
 /* mobile responsive styles */
-@media (min-width: 280px) and (max-width: 770px)
+@media (max-width: 770px)
 {
     .white-logo
     {
         width: 70px;
     }
-    .mobile-menu 
+    .black-logo 
+    {
+        width: 250px;
+    }
+    /* .mobile-menu 
     {
         margin-top: 5px;
-    }
-    .background 
+    } */
+    .banner-image
     {
-        margin-top: 20px;
+        height: 50%;
+        margin-top: 10px;
     }
     .mobile-logo
     {
         left: 0%;
         position: static;
         transform: translateX(-0%);
+        width: 100px;
     }
     .contact-btn
     {
@@ -215,11 +316,24 @@ body, html {
     {
         margin-right: 0;
     }
-    .background
+    .collection 
     {
-        height: 70%;
+        margin-top: 40px;
     }
-
-
+    .collection-heading 
+    {
+        font-size: 45px;
+    }
+    .collection-text
+    {
+        font-size: 18px;
+    }
+    .image-container
+    {
+        margin-top: 30px;
+    }
+    .overlay 
+    {
+        display: none;
+    }
 }
-
