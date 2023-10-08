@@ -1,3 +1,4 @@
+// Function to enable scrolling when arrow is clicked
 document.querySelector('.scroll-down-arrow').addEventListener('click', function () {
     // Animate the reveal effect
     const landing = document.querySelector('.landing');
@@ -12,11 +13,16 @@ document.querySelector('.scroll-down-arrow').addEventListener('click', function 
     // After a short delay (adjust as needed), show the content
     setTimeout(() => {
         landing.style.display = 'none';
-        // content.style.opacity = '1';
         content.style.transform = 'translateY(0%)';
-    }, 800); // Adjust the delay time (in milliseconds)
+        
+        // Enable scrolling by removing the overflow: hidden; property from the body
+        document.body.style.overflow = 'auto';
+    }, 1000); // Adjust the delay time (in milliseconds)
 });
-// Add this script at the bottom of your HTML, after including jQuery and Bootstrap scripts.
+
+
+
+// Rest of your code...
 $(document).ready(function () {
     $("#popup-button").click(function () {
         $("#popup").fadeIn();
@@ -26,6 +32,17 @@ $(document).ready(function () {
         $("#popup").fadeOut();
     });
 });
+
+$(document).ready(function () {
+    $("#collection-button").click(function () {
+        $("#popup").fadeIn();
+    });
+
+    $("#close-popup").click(function () {
+        $("#popup").fadeOut();
+    });
+});
+
 
 var menu = document.querySelector(".mobile-menu")
 
